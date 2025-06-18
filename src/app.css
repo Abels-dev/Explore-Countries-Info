@@ -91,3 +91,44 @@ h1 {
    font-weight: normal;
    color: var(--secondary-text-color);
 }
+.search-filter {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+.search-bar {
+   width: 100%;
+   max-width: 450px;
+   padding: 10px 30px;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 6px;
+   display: flex;
+   background-color: var(--secondary--bg-color);
+}
+.search-bar img {
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+   align-self: center;
+}
+.search-bar input {
+   font-family: inherit;
+   flex: 1;
+   padding: 10px;
+   border: none;
+   outline: none;
+   font-size: 1rem;
+   color: var(--text-color);
+   background-color: transparent;
+}
+.no-countries {
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: var(--text-color);
+}

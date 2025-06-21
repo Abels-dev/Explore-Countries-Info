@@ -87,6 +87,11 @@ h1 {
 .country-info h2 ,.details-info h2 {
    margin-bottom: 15px;
 }
+.country-info h2:hover{
+   opacity: 0.8;
+   transform: scale(1.02);
+   transition:  0.3s ease;
+}
 .country-info p ,.details-info p {
    margin-bottom: 5px;
    font-weight: bold;
@@ -159,9 +164,17 @@ h1 {
    max-width: fit-content;
    padding: 10px 10px;
  }
+ .border-btn:hover {
+   background-color: #ccc;
+   transition: 0.3s ease;
+ }
  .link-text{
    text-decoration: none;
    color: var(--secondary-text-color);
+ }
+ .link-text:hover {
+   color: #121212;
+   transition: 0.3s ease;
  }
 .country-details {
    display: flex;
@@ -204,4 +217,57 @@ h1 {
    font-size: 1.5rem;
    font-weight: bold;
    color: var(--text-color);
+}
+
+@media screen and (max-width:600px){
+      header{
+          padding: 1.5rem 1.2rem;
+      }
+      header h1 {
+          font-size: 1.1rem;
+      }
+      .dark-mode-toggle img {
+          width: 15px;
+          height: 15px;
+      }
+      .container {
+          padding: 20px;
+      }
+      .search-filter{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+            margin-top: 10px;
+      }
+      .search-bar {
+          width: 100%;
+          max-width: 100%;
+          padding: 5px 15px;
+      }
+      .country-list{
+         padding: 0px 30px;
+      }
+      .country-details{
+         flex-direction: column;
+         gap: 20px;
+         justify-content: start;
+         align-items: start;
+      }
+      .details-info{
+         grid-template-columns: 1fr;
+         gap: 30px;
+         align-items: flex-start;
+         justify-content: start;
+         padding: 0px;
+      }
+      .border-countries{
+         grid-column: span 1;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+         margin-top: 0px;
+      }
+      .border-countries button{
+         min-width: 100px;
+      }
 }

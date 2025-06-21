@@ -76,18 +76,22 @@ h1 {
    object-fit: cover;
    border-radius: 8px 8px 0 0;
 }
-.country-info {
+.country-info ,.details-info {
    padding: 10px 20px;
    color: var(--text-color);
 }
-.country-info h2 {
+.country-name {
+   color: var(--text-color);
+   text-decoration: none;
+}
+.country-info h2 ,.details-info h2 {
    margin-bottom: 15px;
 }
-.country-info p {
+.country-info p ,.details-info p {
    margin-bottom: 5px;
    font-weight: bold;
 }
-.country-info span {
+.country-info span,.details-info span {
    font-weight: normal;
    color: var(--secondary-text-color);
 }
@@ -130,5 +134,74 @@ h1 {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   color: var(--text-color);
+}
+.btn-primary{
+   background-color: var(--secondary--bg-color);
+   color: var(--secondary-text-color);
+   padding: 10px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4px;
+}
+.left-arrow {
+   stroke: var(--secondary-text-color);
+   width: 26px;
+   height: 16px;
+ }
+ .border-btn{
+   min-width: 120px;
+   max-width: fit-content;
+   padding: 10px 10px;
+ }
+ .link-text{
+   text-decoration: none;
+   color: var(--secondary-text-color);
+ }
+.country-details {
+   display: flex;
+   align-items: center;
+   gap: 90px;
+   margin-top: 60px;
+}
+.country-details img{
+   width: 350px;
+}
+.details-info {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 18px;
+   align-items: center;
+}
+.details-info h2 {
+   margin-bottom: 20px;
+   font-size: 1.6rem;
+}
+.border-countries {
+   grid-column: span 2;
+   display: flex;
+   gap: 13px;
+   align-items: center;
+   margin-top: 30px;
+}
+.border-countries div{
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.loading{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.5rem;
+   font-weight: bold;
    color: var(--text-color);
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const CountryCard = ({country}) => {
    return (
       <div className="country-card">
@@ -5,7 +7,7 @@ export const CountryCard = ({country}) => {
             <img src={country.flags.png} />
          </div>
          <div className="country-info">
-            <h2>{country.name.common}</h2>
+            <Link to={`/details/${country.name.official}`} className="country-name"><h2>{country.name.common}</h2></Link>
             <p>
                Population: <span>{country.population}</span>
             </p>

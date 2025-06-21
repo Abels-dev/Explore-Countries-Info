@@ -1,5 +1,5 @@
 # Frontend Mentor - REST Countries API with color theme switcher solution
-
+![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
 This is a solution to the REST Countries API with color theme switcher challenge on Frontend Mentor.
 
 

@@ -167,14 +167,7 @@ h1 {
  .border-btn:hover {
    background-color: #ccc;
    transition: 0.3s ease;
- }
- .link-text{
-   text-decoration: none;
-   color: var(--secondary-text-color);
- }
- .link-text:hover {
    color: #121212;
-   transition: 0.3s ease;
  }
 .country-details {
    display: flex;

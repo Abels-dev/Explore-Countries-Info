@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
 import { ArrowLeft } from "lucide-react";
@@ -7,6 +7,7 @@ const CountryDetails = () => {
    const { name } = useParams();
    const [details, setDetails] = useState(null);
    const [borderCountries, setBorderCountries] = useState([]);
+   const navigate = useNavigate();
    useEffect(() => {
       const fetchCountryDetails = async () => {
          try {
@@ -112,8 +113,8 @@ const CountryDetails = () => {
                               borderCountries.map((borderCountry, index) => (
                                  <button
                                     key={index}
-                                    className="btn-primary border-btn">
-                                    <Link to={`/details/${borderCountry.officialName}`} className="link-text">{borderCountry.commonName}</Link>
+                                    className="btn-primary border-btn" onClick={()=>navigate(`/details/${borderCountry.officialName}`)}>
+                                    {borderCountry.commonName}
                                  </button>
                               ))
                            ) : (

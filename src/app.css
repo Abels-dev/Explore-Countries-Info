@@ -56,6 +56,9 @@ h1 {
    font-weight: bold;
    color: var(--text-color);
 }
+.link-text{
+   text-decoration: none;
+}
 .container {
    padding: 40px 70px;
 }

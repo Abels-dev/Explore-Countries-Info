@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
    const [currentTheme, setCurrentTheme] = useState("light");
@@ -20,7 +21,7 @@ const NavBar = () => {
    }, []);
    return (
       <header>
-         <h1>Where in the World?</h1>
+         <Link to={"/"} className="link-text"><h1>Where in the World?</h1></Link>
          <div className="dark-mode-toggle-container">
             <button className="dark-mode-toggle" onClick={handleClick}>
                <img

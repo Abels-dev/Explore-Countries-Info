@@ -4,7 +4,7 @@ export const CountryCard = ({country}) => {
    return (
       <div className="country-card">
          <div className="country-flag">
-            <img src={country.flags.png} />
+            <img src={country.flags.png} alt={country.name.common}/>
          </div>
          <div className="country-info">
             <Link to={`/details/${country.name.official}`} className="country-name"><h2>{country.name.common}</h2></Link>
